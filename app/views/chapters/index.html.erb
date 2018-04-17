@@ -1,5 +1,6 @@
 <h3><%= link_to @section.section_title, section_lessons_path(@lesson)%> / <%= @lesson.lesson_title %></h3>
 
 <% @chapters.each do |chapter| %>
-  <p><%= link_to chapter.title, lesson_chapters_path(@lesson) %></p>
+
+  <p><%= link_to chapter.title, lesson_chapter_path(@chapter.lesson_id, @section) %></p>
 <% end %>
