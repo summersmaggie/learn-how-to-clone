@@ -1,6 +1,7 @@
-<% @section.lessons.each do |lesson| %>
+<h1><%= @section.section_title %></h1>
 
-  <li>
+<% @section.lessons.each do |lesson| %>
+  <p>
     <%= lesson.lesson_title %>
-  </li>
+  </p>
 <% end %>
