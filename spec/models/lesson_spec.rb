@@ -4,4 +4,5 @@ describe Lesson do
   it { should validate_presence_of :lesson_title }
   it { should validate_presence_of :number }
   it { should validate_presence_of :section_id }
+  it { should have_many :chapters }
 end
