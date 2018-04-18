@@ -1,4 +1,6 @@
-<h1>Courses</h1>
+<% content_for(:title, "Section | Learn How To Program") %>
+
+<h1>Courses</h1><h4><em><%= link_to "Create a New Course", new_section_path %></em></h4>
 
 <% @sections.each do |section| %>
   <p><%= link_to section.section_title, section_lessons_path(section) %></p>
